@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 
-//statusbar
 //logo
 
 export default function Topo() {
@@ -12,7 +11,7 @@ export default function Topo() {
 
 const estilos = StyleSheet.create({
     topo: {
-        marginTop: 200,
+        marginTop: 250,
         alignItems: "center",
     },
     textoTopo: {
