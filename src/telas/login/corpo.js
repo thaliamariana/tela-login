@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { TextInput, StyleSheet, View, TouchableOpacity, Text } from "react-native";
 
-//inputs
-//botao
-//esqueceu a senha
-
 export default function Corpo() {
 
     const [login, setLogin] = useState("")
@@ -17,6 +13,10 @@ export default function Corpo() {
     
         <TouchableOpacity style={estilos.botao}>
             <Text style={estilos.botaoTexto}>Entrar</Text>
+        </TouchableOpacity>
+        
+        <TouchableOpacity>
+            <Text style={estilos.esqueceuSenha}>Esqueceu a senha? Clique aqui para recuperá-la.</Text>
         </TouchableOpacity>
 
         </View>
@@ -34,6 +34,7 @@ const estilos = StyleSheet.create({
         padding: 8,
         paddingLeft: 20,
         marginTop: 25,
+
     },
     botao: {
         backgroundColor: "#543153",
@@ -45,5 +46,11 @@ const estilos = StyleSheet.create({
         color: "white",
         textAlign: "center",
         fontSize: 16,
+    },
+    esqueceuSenha: {
+        color: "#565656",
+        fontSize: 13,
+        marginTop: 15,
+        textAlign: "center",
     },
 })
