@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TextInput, StyleSheet, View } from "react-native";
+import { TextInput, StyleSheet, View, TouchableOpacity, Text } from "react-native";
 
 //inputs
 //botao
@@ -14,9 +14,12 @@ export default function Corpo() {
 
         <TextInput style={estilos.inputUsuario} onChangeText={text=>setLogin(text)} placeholder="Usuário"/>
         <TextInput style={estilos.inputUsuario} onChangeText={text=>setSenha(text)} placeholder="Senha"/>
-        
-        </View>
+    
+        <TouchableOpacity style={estilos.botao}>
+            <Text style={estilos.botaoTexto}>Entrar</Text>
+        </TouchableOpacity>
 
+        </View>
 }
 
 const estilos = StyleSheet.create({
@@ -31,6 +34,16 @@ const estilos = StyleSheet.create({
         padding: 8,
         paddingLeft: 20,
         marginTop: 25,
-
+    },
+    botao: {
+        backgroundColor: "#543153",
+        marginTop: 20,
+        padding: 10,
+        borderRadius: 25,
+    },
+    botaoTexto: {
+        color: "white",
+        textAlign: "center",
+        fontSize: 16,
     },
 })
