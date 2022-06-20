@@ -11,7 +11,7 @@ export default function Topo() {
 
 const estilos = StyleSheet.create({
     topo: {
-        marginTop: 250,
+        marginTop: "60%",
         alignItems: "center",
     },
     textoTopo: {
