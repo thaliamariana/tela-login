@@ -1,13 +1,14 @@
 import React from "react";
 import { View, Text, TextInput, StyleSheet } from "react-native";
 import Botao from "../../componentes/botao";
+import Texto from "../../componentes/Texto";
 
 export default function Cadastro() {
     return <View style={estilos.container}>
 
         {/* logo */}
 
-        <Text style={estilos.texto}>Por favor, nos informe o endereço de e-mail.</Text>
+        <Texto style={estilos.texto}>Por favor, nos informe o endereço de e-mail.</Texto>
 
         <TextInput style={estilos.inputEmail} placeholder="E-mail"/>
 
