@@ -1,15 +1,19 @@
 import React from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 import Botao from "../../componentes/botao";
+import { useNavigation } from "@react-navigation/native"
 
 export default function Inicial(){
+
+    const navegacao = useNavigation()
+
     return <View style={estilos.container}>
 
         {/* logo */}
 
         <Botao>Criar nova conta</Botao>
 
-        <TouchableOpacity style={estilos.botao}>
+        <TouchableOpacity style={estilos.botao} onPress={() => navegacao.navigate("Login")}>
             <Text style={estilos.botaoTexto}>Entrar</Text>
         </TouchableOpacity>
 
