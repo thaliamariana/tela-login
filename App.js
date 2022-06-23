@@ -7,8 +7,8 @@ import Rotas from "./src/rotas";
 export default function App() {
 
   let [fonteCarregada] = useFonts({
-    Montserrat_400Regular,
-    Montserrat_700Bold,
+    "MontserratRegular": Montserrat_400Regular,
+    "MontserratBold": Montserrat_700Bold,
   }); 
 
   if (!fonteCarregada){

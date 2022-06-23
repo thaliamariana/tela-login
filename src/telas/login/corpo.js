@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { TextInput, StyleSheet, View, TouchableOpacity, Text } from "react-native";
+import { TextInput, StyleSheet, View, TouchableOpacity } from "react-native";
 import Botao from "../../componentes/botao";
+import Texto from "../../componentes/Texto";
 
 export default function Corpo() {
 
@@ -15,7 +16,7 @@ export default function Corpo() {
         <Botao>Entrar</Botao>
 
         <TouchableOpacity>
-            <Text style={estilos.esqueceuSenha}>Esqueceu a senha? Clique aqui para recuperá-la.</Text>
+            <Texto style={estilos.esqueceuSenha}>Esqueceu a senha? Clique aqui para recuperá-la.</Texto>
         </TouchableOpacity>
 
         </View>

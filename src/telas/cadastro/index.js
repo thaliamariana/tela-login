@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TextInput, StyleSheet } from "react-native";
+import { View, TextInput, StyleSheet } from "react-native";
 import Botao from "../../componentes/botao";
 import Texto from "../../componentes/Texto";
 
