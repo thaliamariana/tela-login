@@ -1,16 +1,20 @@
-import React from "react";
-import { View, TextInput, StyleSheet } from "react-native";
+import React, { useState } from "react";
+import { View, StyleSheet } from "react-native";
 import Botao from "../../componentes/botao";
 import Texto from "../../componentes/Texto";
+import InputTexto from "../../componentes/InputTexto";
 
 export default function Cadastro() {
+
+    const [email, setEmail] = useState("")
+
     return <View style={estilos.container}>
 
         {/* logo */}
 
         <Texto style={estilos.texto}>Por favor, nos informe o endereço de e-mail.</Texto>
 
-        <TextInput style={estilos.inputEmail} placeholder="E-mail"/>
+        <InputTexto onChangeText={(text)=>setEmail(text)} placeholder="E-mail"/>
 
         <Botao>Avançar</Botao>
     </View>
@@ -27,13 +31,5 @@ const estilos = StyleSheet.create({
         fontSize: 16,
         color: "#565656",
         textAlign: "center",
-    },
-    inputEmail: {
-        fontSize: 16,
-        backgroundColor: "#F0F1F2",
-        borderRadius: 25,
-        padding: 8,
-        paddingLeft: 20,
-        marginTop: 20,
     },
 })
