@@ -1,10 +1,11 @@
 import React from "react";
 import { TouchableOpacity, Text, StyleSheet } from "react-native"; 
+import Texto from "./Texto";
 
-export default function Botao({ children }) {
+export default function Botao(props) {
     return <>
-        <TouchableOpacity style={estilos.botao}>
-            <Text style={estilos.botaoTexto}>{ children }</Text>
+        <TouchableOpacity style={estilos.botao} onPress={props.onPress}>
+            <Texto style={estilos.botaoTexto}>{ props.children }</Texto>
         </TouchableOpacity>
     </>
 }

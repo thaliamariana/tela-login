@@ -1,6 +1,7 @@
 import React from "react";
-import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
+import { View, TouchableOpacity, StyleSheet } from "react-native";
 import Botao from "../../componentes/botao";
+import Texto from "../../componentes/Texto";
 import { useNavigation } from "@react-navigation/native"
 
 export default function Inicial(){
@@ -11,10 +12,10 @@ export default function Inicial(){
 
         {/* logo */}
 
-        <Botao>Criar nova conta</Botao>
+        <Botao onPress={() => navegacao.navigate("Cadastro")}>Criar nova conta</Botao>
 
         <TouchableOpacity style={estilos.botao} onPress={() => navegacao.navigate("Login")}>
-            <Text style={estilos.botaoTexto}>Entrar</Text>
+            <Texto style={estilos.botaoTexto}>Entrar</Texto>
         </TouchableOpacity>
 
     </View>
